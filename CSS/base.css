@@ -1,12 +1,40 @@
 .panel {
 	font-family: monospace;
-	background-color:lightgrey;
+	background-color:lightgreen;
+	position: relative;
+	/*
+	border-style: inset;
+	border-width: 1px;
+	border-radius: 5px;*/
+}
+
+.button{
+	margin: 0;
+	padding: 10px;
+	vertical-align: center;
+	background-color: grey;
+	color: white;
+	display: inline-block;
+	border-radius: 5px;
+	margin-top: 5px;
+}
+
+#b1{
+	margin-left: 10px;
 }
 
 #top-bar{
 	width:100%;
 	height:30px;
 	float:top;
+	font-size: 15px;
+	padding: 0;
+	margin:0;
+}
+
+#menu-bar{
+	width:100%;
+	height:40px;
 }
 
 #right-bar{
