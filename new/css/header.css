@@ -1,3 +1,49 @@
+body{
+    position: relative;
+}
+
 #header{
-  background-color: ivory;
+
+}
+
+#site_identity{
+  width: 200px;
+  height: auto;
+  float: left;
+}
+
+#header_logo{
+  width: 75%;
+  align-items: center;
+  display: block;
+  margin: auto;
+}
+
+#header_name{
+  width: inherit;
+  text-align: center;
+  font-size: 200%;
+}
+
+#header_social_bar{
+  float: right;
+  position: relative;
+}
+
+#social_bar{
+  list-style: none;
+  overflow: auto;
+}
+
+#social_bar li{
+}
+
+#social_bar li a{
+  padding: 5px;
+  margin: 0;
+}
+
+.social_icons{
+  width: 30px;
+  height: auto;
 }
