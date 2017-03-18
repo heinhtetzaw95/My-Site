@@ -1,49 +1,88 @@
 body{
-    position: relative;
+  font-family: sans-serif;
 }
 
-#header{
-
+#php_header a{
+  outline: 0;
 }
 
-#site_identity{
+#php_header{
+  background-color: ivory;
+  overflow: auto;
+  border: 1px solid black;
+}
+
+#php_header_site_identity{
   width: 200px;
   height: auto;
   float: left;
 }
 
-#header_logo{
+#php_header_logo{
   width: 75%;
-  align-items: center;
   display: block;
   margin: auto;
+  padding: 10px;
 }
 
-#header_name{
-  width: inherit;
+#php_header_name{
+  font-family: 'Times New Roman', serif;
+  font-size: 400%;
   text-align: center;
-  font-size: 200%;
-}
-
-#header_social_bar{
-  float: right;
   position: relative;
 }
 
-#social_bar{
+#php_header_social_links{
+  position: fixed;
+  z-index: 9999;
+  top: 0;
+  right: 0;
+}
+
+#php_header_social_buttons li{
   list-style: none;
-  overflow: auto;
+  background-color: ivory;
+  border-left: 1px solid lightgrey;
 }
 
-#social_bar li{
-}
-
-#social_bar li a{
+#php_header_social_buttons li a{
+  display: block;
   padding: 5px;
-  margin: 0;
+  margin: auto;
 }
 
-.social_icons{
+.php_header_social_icons{
   width: 30px;
-  height: auto;
+  height: 30px;
+}
+
+.php_header_social_icons:hover{
+  filter: brightness(50%);
+}
+
+#php_header_navbar{
+  width: 100%;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+}
+
+#php_header_navbar_links li{
+  display: inline;
+}
+
+#php_header_navbar_links li a{
+  padding: 2em;
+  text-align: center;
+  text-decoration: none;
+  background-color: black;
+  color: white;
+  decoration: none;
+  border: 1px solid black;
+}
+
+#php_header_navbar_links li a:hover, .php_header_active_tab{
+  background-color: darkslategrey;
+  border: 1px solid white;
 }
