@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
 <head>
-<link rel="stylesheet" type="text/css" href="/css/footer.css">
 </head>
 <body>
   <div id="php_footer">
@@ -16,5 +15,3 @@
       All Rights Reserved.
     </div>
   </div>
-</body>
-</html>

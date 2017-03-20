@@ -1,0 +1,15 @@
+/*
+
+CSS for all pages on heinhtet.info
+page background color: ivory
+
+*/
+body{
+  font-family: sans-serif;
+  margin: 0;
+}
+
+#wrapper{
+  background-color: ivory;
+  height: 100vh;
+}
