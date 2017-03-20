@@ -75,6 +75,8 @@
   color: white;
   decoration: none;
   border: 1px solid black;
+  cursor: pointer;
+  cursor: hand;
 }
 
 #php_header_navbar_links li a:hover, .php_header_navbar_active_tab {

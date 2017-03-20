@@ -1,4 +1,3 @@
-<?php include($_SERVER['DOCUMENT_ROOT']."/head.php"); ?>
 <div id="php_header">
   <div id="php_header_site_identity">
     <a href="http://www.heinhtet.info" ><img id="php_header_logo" src="/imgs/logo_transparent.png"></a>
@@ -19,11 +18,11 @@
 
 <div id="php_header_navbar">
   <ul id="php_header_navbar_links">
-    <li><a class="php_header_navbar_active_tab" href="./" > Main </a></li>
+    <li><a onclick="goto('main')" > Main </a></li>
     <li><a onclick="goto('resume')"> Resume </a></li>
-    <li><a href="http://blog.heinhtet.info" target="_blank"> Blog (&#8599) </a></li>
-    <li><a href="./about/"> About </a></li>
-    <li><a href="./contact/"> Contact </a></li>
+    <li><a onclick="goto('about')"> About </a></li>
+    <li><a onclick="goto('contact')"> Contact </a></li>
+    <li><a onclick="goto('blog')"> Blog </a></li>
   </ul>
 </div>
 
@@ -57,6 +56,7 @@
   .fixed-nav-bar{
     position: fixed;
     top: 0;
+    z-index: 10;
   }
 </style>
 <!-- Sticky Nav Bar ends -->
@@ -65,7 +65,7 @@
 <script>
   function goto(page){
     if (page == 'resume'){
-    $.get( "/test.php", function( data ) {
+    $.get( "/resume/resume.php", function( data ) {
       $( "#wrapper" ).html( data );
     });
   }

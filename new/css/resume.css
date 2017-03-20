@@ -1,0 +1,8 @@
+#embeddedpdf {
+  width: 100vw;
+  position: relative;
+}
+
+div[role="toolbar"]{
+  display: none !important;
+}
