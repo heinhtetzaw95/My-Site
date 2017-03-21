@@ -294,6 +294,7 @@ select {
 
 .hidden {
   display: none !important;
+  height: 0 !important;
 }
 [hidden] {
   display: none !important;

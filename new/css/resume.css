@@ -1,4 +1,7 @@
 #embeddedpdf {
-  width: 100%;
+  width: 850px;
   height: 1150px;
+  display: block;
+  margin: 0 auto;
+  padding-top: 3em;
 }

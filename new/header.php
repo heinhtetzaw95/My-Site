@@ -1,9 +1,9 @@
 <div id="php_header">
   <div id="php_header_site_identity">
-    <a href="http://www.heinhtet.info" ><img id="php_header_logo" src="/imgs/logo_transparent.png"></a>
-  </div>
-  <div id="php_header_name">
-    Hein Htet Zaw
+    <div id="php_header_name">
+      HEIN HTET ZAW
+    </div>
+    <a href="http://www.heinhtet.info" ><img id="php_header_logo" src="/imgs/logo_transparent.png" alt="logo-image" title="logo"></a>
   </div>
 </div>
 
@@ -18,11 +18,12 @@
 
 <div id="php_header_navbar">
   <ul id="php_header_navbar_links">
-    <li><a onclick="goto('main')" > Main </a></li>
-    <li><a onclick="goto('resume')"> Resume </a></li>
-    <li><a onclick="goto('about')"> About </a></li>
-    <li><a onclick="goto('contact')"> Contact </a></li>
-    <li><a onclick="goto('blog')"> Blog </a></li>
+    <li><a id="main" onclick="goto('main')" > Main </a></li>
+    <li><a id="resume" onclick="goto('resume')"> Resume </a></li>
+    <li><a id="about" onclick="goto('about')"> About </a></li>
+    <li><a id="contact" onclick="goto('contact')"> Contact </a></li>
+    <li><a id="projects" onclick="goto('projects')"> Projects </a></li>
+    <li><a id="blog" onclick="goto('blog')"> Blog </a></li>
   </ul>
 </div>
 
@@ -64,10 +65,17 @@
 <!-- page changing script -->
 <script>
   function goto(page){
-    if (page == 'resume'){
-    $.get( "/resume/resume.php", function( data ) {
+    var toPage;
+    if(page == 'main') toPage = '/main.php';
+    else if(page == 'resume') toPage = '/resume/resume.php';
+    else if(page == 'about') toPage = '/about/about.php';
+    else if(page == 'contact') toPage = '/contact/contact.php';
+    else if(page == 'projects') toPage = '/projects/projects.php';
+    else if(page == 'blog') { window.open('http://blog.heinhtet.info', '_blank'); }
+
+    $.get( toPage, function( data ) {
       $( "#wrapper" ).html( data );
     });
-  }
+    return;
   }
 </script>
