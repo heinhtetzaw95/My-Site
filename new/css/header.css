@@ -99,6 +99,6 @@
 }
 
 #php_header_navbar_links li a:hover, .php_header_navbar_active_tab {
-  background-color: darkslategrey;
-  border: 1px solid white;
+  background-color: darkslategrey !important;
+  border: 1px solid white !important;
 }
