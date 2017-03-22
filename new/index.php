@@ -10,7 +10,7 @@
 <script>
   $(document).ready(function(){
     var lastVisit = localStorage.getItem("currentPage");
-    if (lastVisit == 'null' || lastVisit == 'blog') $("#main").click();
+    if (lastVisit == null || lastVisit == 'blog') $("#main").click();
     else $("#"+lastVisit).click();
   });
 </script>
