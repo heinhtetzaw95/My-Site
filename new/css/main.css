@@ -11,10 +11,12 @@ h2 {
 
 h3{
   padding: 2em;
+  text-decoration: underline;
 }
 
 p {
   padding-left: 2em;
   padding-right: 2em;
   font-size: 1.2em;
+  line-height: 2em;
 }

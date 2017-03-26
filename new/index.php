@@ -11,6 +11,8 @@
   $(document).ready(function(){
     var lastVisit = localStorage.getItem("currentPage");
     if (lastVisit == null || lastVisit == 'blog') $("#main").click();
-    else $("#"+lastVisit).click();
+    // else $("#"+lastVisit).click();     // to be activated after other pages are developed
+    else if(lastVisit == 'resume') $("#resume").click();
+    else $("#main").click();
   });
 </script>

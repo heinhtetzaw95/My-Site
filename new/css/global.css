@@ -18,4 +18,13 @@ body{
 #wrapper{
   font-family: 'Playfair Display', serif;
   background-color: ivory;
+  padding-bottom: 2em;
+}
+
+.emphasis{
+  color: red;
+}
+
+.emphasis:hover{
+  cursor: pointer;
 }

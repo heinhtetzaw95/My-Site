@@ -74,10 +74,17 @@
     localStorage.setItem("currentPage", page);
     if(page == 'main') toPage = '/main.php';
     else if(page == 'resume') toPage = '/resume/resume.php';
+
+    /*  under development
+
     else if(page == 'about') toPage = '/about/about.php';
     else if(page == 'contact') toPage = '/contact/contact.php';
     else if(page == 'projects') toPage = '/projects/projects.php';
     else if(page == 'blog') { window.open('http://blog.heinhtet.info', '_blank'); return;}
+
+    */
+    
+    else toPage = '/misc/coming-soon.php';
 
     $.get( toPage, function( data ) {
       $( "#wrapper" ).html( data );
