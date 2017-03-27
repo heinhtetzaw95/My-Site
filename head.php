@@ -15,7 +15,7 @@
 ?>
 <head>
 
-<title> <?php echo "HeinHtet.info - ".$titleLink; ?> </title>
+<title> <?php echo "HeinHtet.info"; // - ".$titleLink; ?> </title>
 <link rel="icon" type="image/png" href="/imgs/logo_white_bg.png" />
 <link rel="stylesheet" type="text/css" href="/css/header.css">
 <link rel="stylesheet" type="text/css" href="/css/footer.css">

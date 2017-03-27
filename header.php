@@ -3,7 +3,7 @@
     <div id="php_header_name">
       HEIN HTET ZAW
     </div>
-    <a href="http://www.heinhtet.info" ><img id="php_header_logo" src="/imgs/logo_transparent.png" alt="heinhtet.info-logo" title="Hein Htet Zaw - Logo"></a>
+    <a href="http://www.heinhtet.info" ><img id="php_header_logo" src="/imgs/logo_transparent.svg" alt="heinhtet.info-logo" title="Hein Htet Zaw - Logo"></a>
   </div>
 </div>
 
