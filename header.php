@@ -9,10 +9,10 @@
 
 <div id="php_header_social_links">
   <ul id="php_header_social_buttons">
-    <li><a href="https://www.facebook.com/heinhtetzaw95" target="_blank"> <img class="php_header_social_icons" src="/imgs/icons/round_fb.png" alt="Facebook-icon" title="Facebook"></a></li>
-    <li><a href="https://www.twitter.com/heinhtetzaw95" target="_blank"> <img class="php_header_social_icons" src="/imgs/icons/round_twitter.png" alt="Twitter-icon" title="Twitter"></a></li>
-    <li><a href="https://www.linkedin.com/in/heinhtetzaw" target="_blank"> <img class="php_header_social_icons" src="/imgs/icons/round_linkedin.png" alt="LinkedIn-icon" title="LindedIn"></a></li>
-    <li><a href="https://www.github.com/heinhtetzaw95" target="_blank"> <img class="php_header_social_icons" src="/imgs/icons/round_github.png" alt="GitHub-icon" title="GitHub"></a></li>
+    <li><a href="https://www.facebook.com/heinhtetzaw95" target="_blank"> <img class="php_header_social_icons" src="/imgs/icons/facebook.svg" alt="Facebook-icon" title="Facebook"></a></li>
+    <li><a href="https://www.twitter.com/heinhtetzaw95" target="_blank"> <img class="php_header_social_icons" src="/imgs/icons/twitter.svg" alt="Twitter-icon" title="Twitter"></a></li>
+    <li><a href="https://www.linkedin.com/in/heinhtetzaw" target="_blank"> <img class="php_header_social_icons" src="/imgs/icons/linkedin.svg" alt="LinkedIn-icon" title="LindedIn"></a></li>
+    <li><a href="https://www.github.com/heinhtetzaw95" target="_blank"> <img class="php_header_social_icons" src="/imgs/icons/github.svg" alt="GitHub-icon" title="GitHub"></a></li>
   </ul>
 </div>
 

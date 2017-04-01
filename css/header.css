@@ -55,11 +55,16 @@
   padding: 2px;
 }
 
+#php_header_social_buttons li img {
+ /* width: 100%;*/
+}
+
 .php_header_social_icons{
   width: 30px;
   height: 30px;
-  border-radius: 50%;
+/*  border-radius: 50%; */
   border: 1px solid silver;
+  background-color: white;
 }
 
 .php_header_social_icons:hover{
