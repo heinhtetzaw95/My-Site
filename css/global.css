@@ -1,9 +1,26 @@
-/*
-
-CSS for all pages on heinhtet.info
-page background color: ivory
-
+/* 
+*   Author: Hein Htet Zaw
+*   For: www.heinhtet.info
+*   Date: March 2017
+*   Copyright: 2017 Hein Htet Zaw. All Rights Reserved
 */
+
+/**************** theme color defined ***************/
+:root {
+
+--main-bg-color: ivory;
+--main-text-color: black;
+
+--active-tab-color: darkslategrey;
+--active-tab-border-color: ivory;
+
+--contrast-text-color: white;
+--contrast-background-color: black;
+
+--emphasised-text-color: red;
+}
+/****************************************************/
+
 *{
     margin:0;
     padding:0;
@@ -13,18 +30,181 @@ body{
   font-family: sans-serif;
   margin: 0;
   outline: none;
+  color: var(--main-text-color);
 }
 
 #wrapper{
   font-family: 'Playfair Display', serif;
-  background-color: ivory;
+  background-color: var(--main-bg-color);
   padding-bottom: 2em;
 }
 
+/* emphasized text in body */
 .emphasis{
-  color: red;
+  color: var(--emphasised-text-color);
 }
 
 .emphasis:hover{
   cursor: pointer;
 }
+
+h1 {
+  text-align: center;
+  padding-top: 1em;
+  font-size: 3em;
+}
+
+h2 {
+  text-align: center;
+  padding: .5em;
+}
+
+h3{
+  padding: 2em;
+  text-decoration: underline;
+}
+
+p {
+  padding-left: 2em;
+  padding-right: 2em;
+  font-size: 1.2em;
+  line-height: 2em;
+}
+
+/* embedded pdf on resume page */
+#embeddedpdf {
+  width: 850px;
+  height: 1150px;
+  display: block;
+  margin: 0 auto;
+  padding-top: 3em;
+  border: none;
+}
+
+/********************************** header css begins ********************************/
+#php_header a{
+  outline: 0;
+}
+
+#php_header{
+  background-color: var(--main-bg-color);
+  overflow: auto;
+  display: block;
+}
+
+#php_header_site_identity{
+  width: 33%;
+  height: auto;
+  /* float: left; */
+  display: block;
+  margin: 0 auto;
+}
+
+#php_header_logo{
+  width: 200px;
+  display: block;
+  margin: auto;
+  padding: 10px;
+}
+
+#php_header_name{
+  font-family: 'Playfair Display', serif;
+  font-size: 2em;
+  text-align: center;
+}
+
+#php_header_social_links{
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 9999;
+  display: flex;
+  justify-content: center;
+  background-color: transparent;
+}
+
+#php_header_social_buttons {
+  margin: 0;
+  padding-top: 8px;
+  padding-right: 10px;
+  padding-left: 3px;
+  padding-bottom: 3px;
+}
+
+#php_header_social_buttons li{
+  display: inline-block;
+}
+
+#php_header_social_buttons li a{
+  padding: 2px;
+}
+
+.php_header_social_icons{
+  width: 30px;
+  height: 30px;
+}
+
+.php_header_social_icons:hover{
+  filter: brightness(50%);
+}
+
+#php_header_navbar{
+  width: 100%;
+  background-color: var(--contrast-background-color);
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+}
+
+#php_header_navbar_links {
+  margin: 0;
+  padding-left: 0;
+  padding-right: 0;
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
+#php_header_navbar_links li{
+  display: inline;
+}
+
+#php_header_navbar_links li a{
+  padding: 2em;
+  text-align: center;
+  text-decoration: none;
+  background-color: var(--contrast-background-color);
+  color: var(--contrast-text-color);
+  border: 1px solid var(--contrast-background-color);
+  cursor: pointer;
+  cursor: hand;
+}
+
+#php_header_navbar_links li a:hover, .php_header_navbar_active_tab {
+  background-color: var(--active-tab-color) !important;
+  border: 1px solid var(--active-tab-border-color) !important;
+}
+/********************************** header css ends **********************************/
+/********************************** footer css begins ********************************/
+
+#php_footer{
+  width: 100%;
+  color: var(--contrast-text-color);
+  background-color: var(--contrast-background-color);
+  overflow-y: auto;
+}
+
+#php_footer_description, #php_footer_copyright{
+  padding: 1em;
+  line-height: 1.5em;
+}
+
+#php_footer_description{
+  float: left;
+}
+
+#php_footer_copyright{
+  float: right;
+  text-align: right;
+}
+
+/********************************* foter css ends ************************************/
